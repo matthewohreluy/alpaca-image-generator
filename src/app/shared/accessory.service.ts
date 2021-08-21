@@ -39,6 +39,7 @@ export class AccessoryService {
   }
 
   randomize(){
+    
     this.accessories.forEach((element)=>{
       this.chosenAccessories[element.category.toLowerCase()] = element.styles[Math.floor(Math.random()*element.styles.length)];
     })
