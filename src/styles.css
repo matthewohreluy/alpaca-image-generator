@@ -33,11 +33,19 @@ body{
 .flex-container .flex-item-2{
   height: 80vh;
   display: flex;
-  align-items: row;
+  flex-direction: row;
   /* align-items: center;
   justify-content: center; */
   width: 100%;
+  flex-wrap: wrap;
+}
 
+@media (min-width: 700px){
+  .flex-container .flex-item-2{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
 }
 
 .flex-container .flex-item-2 .alpaca-container,
@@ -48,6 +56,8 @@ body{
   justify-content: center;
   width: 50%;
   flex-direction: column;
+  min-width: 700px;
+  flex-basis: 700px;
 }
 
 
