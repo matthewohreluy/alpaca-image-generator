@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "alpaca-image-generator"
+    }
+  },
+  "defaultProject": "alpaca-image-generator",
+  "cli": {
+    "analytics": "1bcc8062-0bfd-4838-be2b-c95e6d296a80"
+  }
 }

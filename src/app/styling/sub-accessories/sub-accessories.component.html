@@ -1,0 +1,6 @@
+<div class="heading">
+  <h3>STYLE</h3>
+</div>
+<div class="container" *ngIf="subAccessories">
+  <button *ngFor="let subaccessory of subAccessories" class="btn btn-primary" (click)="chooseSubAccessory(subaccessory)" [ngClass]="{'btn-current':accessoryChecker(subaccessory)}">{{subaccessory}}</button>
+</div>

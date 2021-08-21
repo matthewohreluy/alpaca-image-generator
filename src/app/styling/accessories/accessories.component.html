@@ -1,0 +1,11 @@
+<div class="heading">
+  <h3>ACCESSORIZE THE ALPACA'S</h3>
+</div>
+<div class="container" *ngIf="accessories">
+  <ng-container *ngFor="let accessory of accessories" >
+    <button *ngIf="!accessory.isHidden" class="btn btn-primary" (click)="chooseAccessory(accessory)"
+      [ngClass]="{'btn-current': accessoryChecker(accessory.category, currentAccessory) }">
+      {{accessory.category}}
+    </button>
+  </ng-container>
+</div>

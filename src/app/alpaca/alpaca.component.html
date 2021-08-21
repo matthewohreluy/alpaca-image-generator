@@ -1,0 +1,7 @@
+<div class="alpaca-image">
+  <app-alpaca-image class="image" *ngFor="let accessory of accessories" appAlpacaImageSetter [accessory]="{category: accessory.category, chosenAccessory: chosenAccessories[accessory.category.toLowerCase()] }"></app-alpaca-image>
+</div>
+
+<div class="alpaca-buttons">
+  <button class="btn btn-secondary" (click)="randomize()">RANDOMIZE</button>
+</div>
