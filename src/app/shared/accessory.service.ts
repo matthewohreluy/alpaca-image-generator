@@ -31,7 +31,7 @@ export class AccessoryService {
     var category = accessory.category.toLowerCase();
     var chosenAccessory = accessory.chosenAccessory.toLowerCase().replace(' ','-');
     // create path
-    return `url('../../assets/alpaca/${category}/${chosenAccessory}.png') center center/cover`;
+    return `url('./assets/alpaca/${category}/${chosenAccessory}.png') center center/cover`;
   }
 
   accessoryChecker(value1, value2){
